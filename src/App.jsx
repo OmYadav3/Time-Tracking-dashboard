@@ -1,16 +1,84 @@
-import React from 'react'
+import React from "react";
+import Userprofile from "./components/Userprofile";
+import userimage from "/userimage.png";
+import icon from "/icon-ellipsis.svg";
+import bgicon from "/icon-work.svg";
+import bgiconplay from "/icon-play.svg";
+import bgiconstudy from "/icon-study.svg";
+import bgiconexercise from "/icon-exercise.svg";
+import bgiconsocial from "/icon-social.svg";
+import bgiconselfcare from "/icon-self-care.svg";
+import FieldCard from "./components/FieldCard";
+
 
 const App = () => {
+  console.log(bgicon);
   return (
-    <div>
-      
-      omyadav
+    <div className="flex items-center justify-center m-20">
+      <div className="section-A ">
+        <Userprofile image={userimage} username={"Jeremy Robson"} />
+      </div>
+      <div className="section-B grid grid-cols-3 p-4 gap-4">
+
+        <FieldCard
+        bgcolor={'bg-Lightorange'}
+        bgicons={bgicon}
+        fieldname ={"Work"}
+        hours={"32hrs"}
+        fullhours={"36hrs"}
+        icon={icon}
+        />
+
+        <FieldCard
+        bgcolor={'bg-Softblue'}
+        bgicons={bgiconplay}
+        fieldname ={"Work"}
+        hours={"32hrs"}
+        fullhours={"36hrs"}
+        icon={icon}
+        />
+
+        <FieldCard
+        bgcolor={'bg-Lightred'}
+        bgicons={bgiconstudy}
+        fieldname ={"Work"}
+        hours={"32hrs"}
+        fullhours={"36hrs"}
+        icon={icon}
+        />
+
+        <FieldCard
+        bgcolor={'bg-Limegreen'}
+        bgicons={bgiconexercise}
+        fieldname ={"Work"}
+        hours={"32hrs"}
+        fullhours={"36hrs"}
+        icon={icon}
+        />
+
+        <FieldCard
+        bgcolor={'bg-Violet'}
+        bgicons={bgiconsocial}
+        fieldname ={"Work"}
+        hours={"32hrs"}
+        fullhours={"36hrs"}
+        icon={icon}
+        />
+
+        <FieldCard
+        bgcolor={'bg-Softorange'}
+        bgicons={bgiconselfcare}
+        fieldname ={"Work"}
+        hours={"32hrs"}
+        fullhours={"36hrs"}
+        icon={icon}
+        />
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default App
-
+export default App;
 
 // Report for
 // Jeremy Robson

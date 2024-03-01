@@ -11,3 +11,8 @@
   box-sizing: border-box; 
   font-family: "Rubik", sans-serif;
 }
+
+body{
+  background-color: hsl(226, 43%, 10%);
+
+}

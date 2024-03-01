@@ -8,7 +8,7 @@ export default {
     extend: {
       colors:{
         Blue: "hsl(246, 80%, 60%)",
-        Lightred: "hsl(15, 100%, 70%)", 
+        Lightorange: "hsl(15, 100%, 70%)", 
         Softblue: "hsl(195, 74%, 62%)",
         Lightred: "hsl(348, 100%, 68%)",
         Limegreen: "hsl(145, 58%, 55%)",
