@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Userprofile from "./components/Userprofile";
 import userimage from "/userimage.png";
 import icon from "/icon-ellipsis.svg";
@@ -12,7 +12,34 @@ import FieldCard from "./components/FieldCard";
 
 
 const App = () => {
-  console.log(bgicon);
+
+  // const [data , setData] = useState() ;
+
+  // console.log(bgicon);
+
+
+  // const fetchData = async () => {
+  //   try {
+  //     const response = await fetch('/data.json'); // Assuming the file is in the public directory
+  //     const jsonData = await response.json();
+  //     if(jsonData){
+  //       setData(jsonData);
+  //     }
+  //     console.log(response, jsonData); 
+  //   } catch (error) {
+  //     console.error('Error fetching data:', error);
+  //   }
+  // };
+
+  // useEffect(() => {
+  //   fetchData();
+    
+   
+  // }, [])
+  
+
+
+
   return (
     <div className="flex items-center justify-center m-20">
       <div className="section-A ">
@@ -23,7 +50,7 @@ const App = () => {
         <FieldCard
         bgcolor={'bg-Lightorange'}
         bgicons={bgicon}
-        fieldname ={"Work"}
+        fieldname ={"work"}
         hours={"32hrs"}
         fullhours={"36hrs"}
         icon={icon}
@@ -32,45 +59,45 @@ const App = () => {
         <FieldCard
         bgcolor={'bg-Softblue'}
         bgicons={bgiconplay}
-        fieldname ={"Work"}
-        hours={"32hrs"}
-        fullhours={"36hrs"}
+        fieldname ={"Play"}
+        hours={"10hrs"}
+        fullhours={"8hrs"}
         icon={icon}
         />
 
         <FieldCard
         bgcolor={'bg-Lightred'}
         bgicons={bgiconstudy}
-        fieldname ={"Work"}
-        hours={"32hrs"}
-        fullhours={"36hrs"}
+        fieldname ={"Study"}
+        hours={"4hrs"}
+        fullhours={"7hrs"}
         icon={icon}
         />
 
         <FieldCard
         bgcolor={'bg-Limegreen'}
         bgicons={bgiconexercise}
-        fieldname ={"Work"}
-        hours={"32hrs"}
-        fullhours={"36hrs"}
+        fieldname ={"Exercise"}
+        hours={"4hrs"}
+        fullhours={"5hrs"}
         icon={icon}
         />
 
         <FieldCard
         bgcolor={'bg-Violet'}
         bgicons={bgiconsocial}
-        fieldname ={"Work"}
-        hours={"32hrs"}
-        fullhours={"36hrs"}
+        fieldname ={"Social"}
+        hours={"5hrs"}
+        fullhours={"10hrs"}
         icon={icon}
         />
 
         <FieldCard
         bgcolor={'bg-Softorange'}
         bgicons={bgiconselfcare}
-        fieldname ={"Work"}
-        hours={"32hrs"}
-        fullhours={"36hrs"}
+        fieldname ={"Self Care"}
+        hours={"2hrs"}
+        fullhours={"2hrs"}
         icon={icon}
         />
       </div>
