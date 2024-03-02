@@ -2,19 +2,13 @@ import React, { useEffect, useState } from "react";
 import Userprofile from "./components/Userprofile";
 import userimage from "/userimage.png";
 import icon from "/icon-ellipsis.svg";
-import bgicon from "/icon-work.svg";
-import bgiconplay from "/icon-play.svg";
-import bgiconstudy from "/icon-study.svg";
-import bgiconexercise from "/icon-exercise.svg";
-import bgiconsocial from "/icon-social.svg";
-import bgiconselfcare from "/icon-self-care.svg";
 import FieldCard from "./components/FieldCard";
 
 const App = () => {
   const [data, setData] = useState([]);
   const [selectedInterval, setSelectedInterval] = useState("daily");
 
-  console.log(bgicon);
+
 
   const fetchData = async () => {
     try {
@@ -23,7 +17,7 @@ const App = () => {
       if (jsonData) {
         setData(jsonData);
       }
-      console.log(response, jsonData);
+      // console.log(response, jsonData);
     } catch (error) {
       console.error("Error fetching data:", error);
     }
@@ -38,7 +32,7 @@ const App = () => {
   }, []);
 
   return (
-    <div className="flex items-center justify-center m-20">
+    <div className="flex flex-col md:flex-row  sm:items-center sm:justify-center lg:m-20 m-4">
       <div className="section-A ">
         <Userprofile
           image={userimage}
@@ -47,7 +41,7 @@ const App = () => {
           selectedInterval={selectedInterval}
         />
       </div>
-      <div className="section-B grid grid-cols-3 p-4 gap-4">
+      <div className="section-B grid sm:grid-cols-2 lg:grid-cols-3 sm:p-4 pt-6 gap-4">
         {data &&
           data.length > 0 &&
           data.map((item, index) => (
@@ -58,8 +52,7 @@ const App = () => {
               selectedInterval={selectedInterval}
               icon={icon}
               handleIntervalChange={handleIntervalChange}
-              bgcolor={"bg-Lightorange"}
-              bgicons={bgicon}
+             
             />
           ))}
 
