@@ -19,7 +19,6 @@ This is a solution to the [Expenses chart component challenge on Frontend Mentor
 
 Users should be able to:
 
-- View the bar chart and hover over the individual bars to see the correct amounts for each day.✅
 - See the daily, weekly, and monthly activities cards in different colors.✅
 - View the optimal layout for the content depending on their device’s screen size.✅
 - See hover states for all interactive elements on the page.✅
